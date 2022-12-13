@@ -19,7 +19,7 @@
 #include "mbedtls/error.h"
 #include "mbedtls/x509_csr.h"
 #include "mbedtls/x509.h"
-#include "mbedtls/mbedtls_config.h"
+//#include "mbedtls/mbedtls_config.h"
 
 struct gen_key_args {
     mp_arg_val_t ec_curve;
