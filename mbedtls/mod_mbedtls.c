@@ -479,5 +479,5 @@ const mp_obj_module_t mp_module_mbedtls = {
     .globals = (mp_obj_dict_t *)&mp_module_mbedtls_globals,
 };
 
-MP_REGISTER_MODULE(MP_QSTR_mbedtls, mp_module_mbedtls);
+MP_REGISTER_MODULE(MP_QSTR_mbedtls, mp_module_mbedtls, 1);
 
