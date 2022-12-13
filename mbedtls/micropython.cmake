@@ -9,3 +9,9 @@ target_include_directories(usermod_mbedtls INTERFACE
 )
 
 target_link_libraries(usermod INTERFACE usermod_mbedtls)
+
+
+# Allow for mbedtls_config.h to be imported into mod_mbedtls.c
+target_compile_definitions(usermod_mbedtls INTERFACE
+    MBEDTLS_CONFIG_FILE="mbedtls_config.h"
+)
